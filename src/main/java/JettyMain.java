@@ -1,11 +1,9 @@
 import com.mongodb.DB;
 import com.mongodb.MongoURI;
-import org.eclipse.jetty.annotations.AnnotationConfiguration;
 import org.eclipse.jetty.nosql.mongodb.MongoSessionIdManager;
 import org.eclipse.jetty.nosql.mongodb.MongoSessionManager;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.session.SessionHandler;
-import org.eclipse.jetty.webapp.Configuration;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 import java.util.Date;
