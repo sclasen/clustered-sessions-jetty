@@ -10,4 +10,5 @@ import java.io.Serializable;
 public class SessionObj implements Serializable {
     public int count;
     public long last;
+    public byte[] weight;
 }
