@@ -22,7 +22,12 @@ public class JettyMain {
         Server server = new Server(Integer.valueOf(webPort));
         WebAppContext root = new WebAppContext();
 
-        MongoURI mongoURI = new MongoURI(System.getenv("MONGOHQ_URL"));
+        String mongourlVar = System.getenv("MONGO_URL");
+        if (mongourlVar == null) {
+            mongourlVar = "MONGOHQ_URL";
+        }
+
+        MongoURI mongoURI = new MongoURI(System.getenv(mongourlVar));
         DB connectedDB = mongoURI.connectDB();
 
         if (mongoURI.getUsername() != null) {

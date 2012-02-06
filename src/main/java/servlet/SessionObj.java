@@ -9,6 +9,7 @@ import java.io.Serializable;
  */
 public class SessionObj implements Serializable {
 
+    //IMPORTANT
     static final long serialVersionUID = 1L;
 
     public int count;
